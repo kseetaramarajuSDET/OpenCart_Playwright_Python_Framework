@@ -1,0 +1,45 @@
+06/07/2026 09:28:18 PM: INFO: Preparing engine lifecycle switches. Launching browser browser: 'chromium' | Headed: False
+06/07/2026 09:28:18 PM: INFO: Media recording parameter detected as ACTIVE. Directing video output files path to: 'reports/videos'
+06/07/2026 09:28:18 PM: INFO: Spanning secure isolated browser context profile container window.
+06/07/2026 09:28:18 PM: INFO: [test_login_with_valid_credentials] - Background tracing authorized. Deploying continuous diagnostic timeline monitors.
+06/07/2026 09:28:18 PM: INFO: [test_login_with_valid_credentials] - Opening clean workspace page tab canvas session.
+06/07/2026 09:28:18 PM: INFO: [test_login_with_valid_credentials] - Routing browser tab viewport gateway target URL to: 'https://tutorialsninja.com/demo'
+06/07/2026 09:28:19 PM: INFO: ------------------------------------------------------------------------
+06/07/2026 09:28:19 PM: INFO: 🚀 Triggering background page lifecycle setup automation mapping pipeline.
+06/07/2026 09:28:19 PM: INFO: ------------------------------------------------------------------------
+06/07/2026 09:28:19 PM: INFO: Piping live browser driver handles straight into LoginPage constructor context.
+06/07/2026 09:28:19 PM: INFO: Piping live browser driver handles straight into DashboardPage constructor context.
+06/07/2026 09:28:19 PM: INFO: ✅ Core UI Page Objects mapped cleanly to test context state. Ready for script steps.
+06/07/2026 09:28:19 PM: INFO: ========================================================================
+06/07/2026 09:28:19 PM: INFO: 🏁 EXECUTING TEST CASE: Verify Authentication with Valid Credentials
+06/07/2026 09:28:19 PM: INFO: ========================================================================
+06/07/2026 09:28:19 PM: INFO: Step 1: Driving portal interaction path to reveal login elements panel.
+06/07/2026 09:28:19 PM: INFO: Executing top bar interaction pathway loop to unfold profile dashboard link choices.
+06/07/2026 09:28:19 PM: INFO: Targeting element. Scanning DOM tree canvas for visibility: '//a[@title='My Account']'
+06/07/2026 09:28:19 PM: INFO: Interactivity state verified as ENABLED. Firing click event on selector: '//a[@title='My Account']'
+06/07/2026 09:28:20 PM: INFO: Targeting element. Scanning DOM tree canvas for visibility: '//ul[@class='dropdown-menu dropdown-menu-right']//a[normalize-space()='Login']'
+06/07/2026 09:28:20 PM: INFO: Interactivity state verified as ENABLED. Firing click event on selector: '//ul[@class='dropdown-menu dropdown-menu-right']//a[normalize-space()='Login']'
+06/07/2026 09:28:20 PM: INFO: Navigation transition verified. Returning initialized LoginPage Object context.
+06/07/2026 09:28:20 PM: INFO: Step 2: Transferring client system credentials into form collection fields.
+06/07/2026 09:28:20 PM: INFO: Starting authentication transaction sequence block.
+06/07/2026 09:28:20 PM: INFO: Targeting element input field. Verifying visibility state: '#input-email'
+06/07/2026 09:28:20 PM: INFO: Purging stale characters, browser cache, and placeholders from selector: '#input-email'
+06/07/2026 09:28:20 PM: INFO: Input stream authorized. Injecting value: 'kseetaramaraju1@gmail.com' into selector: '#input-email'
+06/07/2026 09:28:20 PM: INFO: Targeting element input field. Verifying visibility state: '#input-password'
+06/07/2026 09:28:20 PM: INFO: Purging stale characters, browser cache, and placeholders from selector: '#input-password'
+06/07/2026 09:28:20 PM: INFO: Input stream authorized. Injecting value: '********' into selector: '#input-password'
+06/07/2026 09:28:20 PM: INFO: Targeting element. Scanning DOM tree canvas for visibility: '//input[@value='Login']'
+06/07/2026 09:28:20 PM: INFO: Interactivity state verified as ENABLED. Firing click event on selector: '//input[@value='Login']'
+06/07/2026 09:28:21 PM: INFO: Authentication transaction dispatched. Page view transition in progress.
+06/07/2026 09:28:21 PM: INFO: Step 3: Sampling landing dashboard canvas elements to verify authorization state.
+06/07/2026 09:28:21 PM: INFO: Initiating visual state assertion check for element layout header: '//h2[normalize-space()='My Orders']'
+06/07/2026 09:28:21 PM: INFO: Dashboard validation milestone confirmed. My Orders heading text is VISIBLE.
+06/07/2026 09:28:21 PM: INFO: ========================================================================
+06/07/2026 09:28:21 PM: INFO: 🎉 TEST CASE CONCLUDED: SUCCESSFUL VALID AUTHENTICATION VERIFIED
+06/07/2026 09:28:21 PM: INFO: ========================================================================
+06/07/2026 09:28:21 PM: INFO: [test_login_with_valid_credentials] - Automation sequence complete. Reconciling test outcome metrics. Failed status: False
+06/07/2026 09:28:21 PM: INFO: [test_login_with_valid_credentials] - Closing timeline track loop handles. Compressing trace archives to zip: 'reports/traces/test_login_with_valid_credentials_trace.zip'
+06/07/2026 09:28:21 PM: INFO: [test_login_with_valid_credentials] - Test passed cleanly. Unlinking passing trace zip off local disk data directories.
+06/07/2026 09:28:21 PM: INFO: [test_login_with_valid_credentials] - Detaching system tab sessions and driver handles. Severing file locks.
+06/07/2026 09:28:21 PM: INFO: [test_login_with_valid_credentials] - Execution passed cleanly. Purging non-failure media recordings from file paths storage: 'C:\AllPythonProjects\OpenCart_Playwright_Python_Framework\reports\videos\page@57f5e07b5c34ea0d24db1a37dcde5e12.webm'
+06/07/2026 09:28:21 PM: INFO: Wiping environment memory allocations. Terminating active browser profile context channels.
