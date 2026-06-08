@@ -1,0 +1,5 @@
+# testData/loginData.yml
+- { user: "Admin", pwd: "wrong123", expected: "fail" }
+- { user: "wrongUser", pwd: "admin123", expected: "fail" }
+- { user: "wrongUser", pwd: "wrongPwd", expected: "fail" }
+- { user: "kseetaramaraju1@gmail.com", pwd: "Seeta@123", expected: "pass" }

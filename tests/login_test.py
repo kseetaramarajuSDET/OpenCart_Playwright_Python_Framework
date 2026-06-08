@@ -5,6 +5,7 @@ import logging
 import pytest
 from tests.base_test import BaseTest
 from config import Config
+from utilities.yaml_reader import YamlReader
 
 
 class TestLogin(BaseTest):
@@ -12,35 +13,53 @@ class TestLogin(BaseTest):
     log = logging.getLogger("TestSuite_Login")
 
     @pytest.mark.sanity
-    def test_login_with_valid_credentials(self):
-        """Validates standard authentication sequence flow using unified framework logging."""
+    def test_login_with_valid_credentials(self, request):
+        self.log.info(f"🏁 EXECUTING TEST CASE: {request.node.name}")
 
-        self.log.info("========================================================================")
-        self.log.info("🏁 EXECUTING TEST CASE: Verify Authentication with Valid Credentials")
-        self.log.info("========================================================================")
-
-        # ------------------------------------------------------------------------
-        # Step 1: UI Navigation Gateway Action Flow
-        # ------------------------------------------------------------------------
-        self.log.info("Step 1: Driving portal interaction path to reveal login elements panel.")
-        # Utilizing our crisp Page Chaining pattern to capture the target page view context
+        self.log.info(" Navigate to login page ")
         login_page_context = self.dashboard_page.navigate_to_login_page()
 
-        # ------------------------------------------------------------------------
-        # Step 2: Form Interaction and Token Dispatch Sequence
-        # ------------------------------------------------------------------------
-        self.log.info("Step 2: Transferring client system credentials into form collection fields.")
+        self.log.info(f"**** Login Credentails : User={Config.USERNAME}, Expected={Config.PASSWORD} ****")
         login_page_context.execute_login(Config.USERNAME, Config.PASSWORD)
 
-        # ------------------------------------------------------------------------
-        # Step 3: Enterprise Validation and Milestone Assertion Logic
-        # ------------------------------------------------------------------------
-        self.log.info("Step 3: Sampling landing dashboard canvas elements to verify authorization state.")
+        self.log.info(" Sampling landing dashboard canvas elements to verify authorization state.")
         dashboard_landing_status = self.dashboard_page.is_myOrders_header_visible()
 
         # Perform structural engine verification
         assert dashboard_landing_status, "❌ Post-authentication validation failed! Dashboard layout header unrendered."
 
-        self.log.info("========================================================================")
         self.log.info("🎉 TEST CASE CONCLUDED: SUCCESSFUL VALID AUTHENTICATION VERIFIED")
-        self.log.info("========================================================================")
+
+    test_data = YamlReader.read_logindata_from_yaml_file("test_data/loginData.yml")
+
+    @pytest.mark.sanity
+    @pytest.mark.parametrize("user, pwd, result", test_data)
+    def test_login_with_valid_and_invalid_credentials(self, user, pwd, result, request):
+        self.log.info(f"**** Starting Data Driven Test: User={user}, Expected={result} ****")
+
+        self.log.info(f"🏁 EXECUTING TEST CASE: {request.node.name}")
+
+        self.log.info(" Navigate to login page ")
+        login_page_context = self.dashboard_page.navigate_to_login_page()
+
+        self.log.info(f"**** Login Credentails : User={user}, Expected={pwd} ****")
+        login_page_context.execute_login(user, pwd)
+
+        if result == "pass":
+            status = self.dashboard_page.is_myOrders_header_visible()
+            if status:
+                self.log.info(f"✅ Pass: Login worked as expected for user: {user}")
+                assert True
+            else:
+                self.log.error(f"❌ Fail: Expected SUCCESS but login failed for: {user}")
+                assert False
+        elif result == "fail":
+            status = self.login_page.get_login_error_message_text()
+            if status:
+                self.log.info(f"✅ Pass: Correctly showed error for invalid user: {user}")
+                assert True
+            else:
+                self.log.error(f"❌ Fail: Expected error message for {user} was NOT displayed")
+                assert False
+
+        self.log.info("**** Finished Data Driven Test Case ****")

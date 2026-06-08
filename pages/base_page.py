@@ -3,6 +3,8 @@
 # ========================================================================
 import logging
 from playwright.sync_api import Page
+
+from config import Config
 from utilities.custom_logger import LogGen  # 🚀 Clean link to your specific logger utility
 
 
@@ -76,3 +78,12 @@ class BasePage:
         title_text = self.page.title()
         self.log.info(f"Successfully scraped active browser tab page title string: '{title_text}'")
         return title_text
+
+    # 🚀 Pro Move: Default the timeout parameter straight to your global Config variable!
+    def is_element_displayed(self, selector: str, timeout_ms: int) -> bool:
+        self.log.info(f"Checking visibility state. Maximum search window: {timeout_ms}ms")
+        try:
+            self.page.wait_for_selector(selector, state="visible", timeout=timeout_ms)
+            return True
+        except Exception:
+            return False

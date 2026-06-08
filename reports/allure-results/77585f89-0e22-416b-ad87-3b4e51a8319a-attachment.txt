@@ -1,0 +1,15 @@
+[32mINFO    [0m TestSuite_Login:login_test.py:38 **** Starting Data Driven Test: User=kseetaramaraju1@gmail.com, Expected=pass ****
+[32mINFO    [0m TestSuite_Login:login_test.py:40 🏁 EXECUTING TEST CASE: test_login_with_valid_and_invalid_credentials[kseetaramaraju1@gmail.com-Seeta@123-pass]
+[32mINFO    [0m TestSuite_Login:login_test.py:42  Navigate to login page 
+[32mINFO    [0m DashboardPage:dashboard_page.py:42 Executing top bar interaction pathway loop to unfold profile dashboard link choices.
+[32mINFO    [0m DashboardPage:base_page.py:36 Targeting element. Scanning DOM tree canvas for visibility: '//a[@title='My Account']'
+[32mINFO    [0m DashboardPage:base_page.py:47 Interactivity state verified as ENABLED. Firing click event on selector: '//a[@title='My Account']'
+[32mINFO    [0m DashboardPage:base_page.py:36 Targeting element. Scanning DOM tree canvas for visibility: '//ul[@class='dropdown-menu dropdown-menu-right']//a[normalize-space()='Login']'
+[32mINFO    [0m DashboardPage:base_page.py:47 Interactivity state verified as ENABLED. Firing click event on selector: '//ul[@class='dropdown-menu dropdown-menu-right']//a[normalize-space()='Login']'
+[32mINFO    [0m DashboardPage:dashboard_page.py:52 Navigation transition verified. Returning initialized LoginPage Object context.
+[32mINFO    [0m Page_Artifact_Fixture:conftest.py:143 [test_login_with_valid_and_invalid_credentials[kseetaramaraju1@gmail.com-Seeta@123-pass]] - Automation sequence complete. Reconciling test outcome metrics. Failed status: False
+[32mINFO    [0m Page_Artifact_Fixture:conftest.py:151 [test_login_with_valid_and_invalid_credentials[kseetaramaraju1@gmail.com-Seeta@123-pass]] - Closing timeline track loop handles. Compressing trace archives to zip: 'reports/traces/test_login_with_valid_and_invalid_credentials[kseetaramaraju1@gmail.com-Seeta@123-pass]_trace.zip'
+[32mINFO    [0m Page_Artifact_Fixture:conftest.py:165 [test_login_with_valid_and_invalid_credentials[kseetaramaraju1@gmail.com-Seeta@123-pass]] - Test passed cleanly. Unlinking passing trace zip off local disk data directories.
+[32mINFO    [0m Page_Artifact_Fixture:conftest.py:183 [test_login_with_valid_and_invalid_credentials[kseetaramaraju1@gmail.com-Seeta@123-pass]] - Detaching system tab sessions and driver handles. Severing file locks.
+[32mINFO    [0m Page_Artifact_Fixture:conftest.py:192 [test_login_with_valid_and_invalid_credentials[kseetaramaraju1@gmail.com-Seeta@123-pass]] - Execution passed cleanly. Purging non-failure media recordings from file paths storage: 'C:\AllPythonProjects\OpenCart_Playwright_Python_Framework\reports\videos\page@f4dff0c8bb9d00c85699881be4f653dc.webm'
+[32mINFO    [0m Browser_Context_Fixture:conftest.py:107 Wiping environment memory allocations. Terminating active browser profile context channels.

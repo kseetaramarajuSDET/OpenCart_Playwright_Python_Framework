@@ -9,7 +9,7 @@ class YamlReader:
     logger = LogGen.loggen()
 
     @staticmethod
-    def read_loginData_from_Yaml_File(filePath):
+    def read_logindata_from_yaml_file(filePath):
         YamlReader.logger.info(f"📂 Attempting to read YAML data from: {filePath}")
 
         # Check if file exists before opening

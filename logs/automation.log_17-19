@@ -1,0 +1,22 @@
+06/08/2026 05:19:56 PM: INFO: 📂 Attempting to read YAML data from: test_data/loginData.yml
+06/08/2026 05:19:56 PM: INFO: ✅ Successfully loaded 4 test data records from YAML.
+06/08/2026 05:19:56 PM: INFO: Preparing engine lifecycle switches. Launching browser browser: 'chromium' | Headed: False
+06/08/2026 05:19:57 PM: INFO: Media recording parameter detected as ACTIVE. Directing video output files path to: 'reports/videos'
+06/08/2026 05:19:57 PM: INFO: Spanning secure isolated browser context profile container window.
+06/08/2026 05:19:57 PM: INFO: [test_login_with_valid_credentials] - Background tracing authorized. Deploying continuous diagnostic timeline monitors.
+06/08/2026 05:19:57 PM: INFO: [test_login_with_valid_credentials] - Opening clean workspace page tab canvas session.
+06/08/2026 05:19:57 PM: INFO: [test_login_with_valid_credentials] - Routing browser tab viewport gateway target URL to: 'https://tutorialsninja.com/demo'
+06/08/2026 05:19:59 PM: INFO: ------------------------------------------------------------------------
+06/08/2026 05:19:59 PM: INFO: 🚀 Triggering background page lifecycle setup automation mapping pipeline.
+06/08/2026 05:19:59 PM: INFO: ------------------------------------------------------------------------
+06/08/2026 05:19:59 PM: INFO: Piping live browser driver handles straight into LoginPage constructor context.
+06/08/2026 05:19:59 PM: INFO: Piping live browser driver handles straight into DashboardPage constructor context.
+06/08/2026 05:19:59 PM: INFO: ✅ Core UI Page Objects mapped cleanly to test context state. Ready for script steps.
+06/08/2026 05:19:59 PM: INFO: 🏁 EXECUTING TEST CASE: test_login_with_valid_credentials
+06/08/2026 05:19:59 PM: INFO:  Navigate to login page 
+06/08/2026 05:19:59 PM: INFO: Executing top bar interaction pathway loop to unfold profile dashboard link choices.
+06/08/2026 05:19:59 PM: INFO: Targeting element. Scanning DOM tree canvas for visibility: '//a[@title='My Account']'
+06/08/2026 05:19:59 PM: INFO: Interactivity state verified as ENABLED. Firing click event on selector: '//a[@title='My Account']'
+06/08/2026 05:19:59 PM: INFO: Targeting element. Scanning DOM tree canvas for visibility: '//ul[@class='dropdown-menu dropdown-menu-right']//a[normalize-space()='Login']'
+06/08/2026 05:19:59 PM: INFO: Interactivity state verified as ENABLED. Firing click event on selector: '//ul[@class='dropdown-menu dropdown-menu-right']//a[normalize-space()='Login']'
+06/08/2026 05:20:00 PM: INFO: Navigation transition verified. Returning initialized LoginPage Object context.

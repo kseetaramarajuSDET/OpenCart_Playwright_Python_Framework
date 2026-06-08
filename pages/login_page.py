@@ -1,6 +1,7 @@
 # ========================================================================
 # pages/login_page.py - LOGIN PAGE FIELD OBJECT REPRESENTATION
 # ========================================================================
+from config import Config
 from pages.base_page import BasePage  # ✅ Smooth inheritance from our parent engine
 
 
@@ -39,13 +40,7 @@ class LoginPage(BasePage):
         # NOTE: Once you create your next page object class (e.g., MyAccountPage),
         # you will add: 'return MyAccountPage(self.page)' right here to finish the chain!
 
-    def get_error_message_text(self) -> str:
-        """Scrapes and returns the dynamic text context from the login warning banner."""
+    def get_login_error_message_text(self):
         self.log.info("Initiating scan for runtime validation error alerts.")
 
-        # Use our explicit visibility guard built right into BasePage structure
-        self.page.wait_for_selector(self._loginErrorMsg, state="visible")
-        error_text = self.page.locator(self._loginErrorMsg).inner_text()
-
-        self.log.warning(f"Extracted active alert banner warning text: '{error_text.strip()}'")
-        return error_text
+        return self.is_element_displayed(self._loginErrorMsg, Config.EXPECT_TIMEOUT)
