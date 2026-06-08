@@ -1,0 +1,38 @@
+# ========================================================================
+# GITHUB SYSTEM WIDE IGNORE MANIFEST FOR PLAYWRIGHT HYBRID FRAMEWORK
+# ========================================================================
+
+# 🐍 1. Python Environment & Dependency Garbage
+# ------------------------------------------------------------------------
+.venv/
+venv/
+ENV/
+env/
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+
+# 📊 2. Framework Execution Artifacts & Media Logs
+# ------------------------------------------------------------------------
+# This completely blocks local testing clutter from entering GitHub
+logs/
+reports/allure-results/
+reports/screenshots/
+reports/traces/
+reports/videos/
+reports/allure-report/
+reports/framework_report.html
+test_data
+
+# 🔒 3. Environment Secrets & IDE Overrides
+# ------------------------------------------------------------------------
+# Block local PyCharm settings and dynamic OS secret tokens
+.idea/
+.vscode/
+*.env
+*.local
+.DS_Store
+Thumbs.db
