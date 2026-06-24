@@ -2,7 +2,14 @@ from pathlib import Path
 import allure
 import pytest
 import logging
+
+from playwright.sync_api import Playwright
+
+from api.users_api import UsersAPI
+from config import Config
 from utilities.custom_logger import LogGen  # 🚀 Hooking up your centralized custom logging framework
+import os
+import platform
 
 
 # ========================================================================
@@ -201,3 +208,99 @@ def page(request, browser_context):
                 name=f"{test_name}_failure_video",
                 attachment_type=allure.attachment_type.WEBM
             )
+
+
+# ==========================================
+# API AUTOMATION FIXTURES (HYBRID SETUP)
+# ==========================================
+
+@pytest.fixture(scope="session")
+def api_request_context(playwright: Playwright):
+    LogGen.loggen()
+    log = logging.getLogger("api_request_context")
+    """
+    Creates a centralized API Context for the entire test run.
+    Scope is 'session' so it only initializes once (super fast!).
+    """
+    log.info("\n[ conftest.py ] -> Initializing Playwright API Context...")
+
+    request_context = playwright.request.new_context(
+        base_url=Config.GOREST_BASE_URL,
+        extra_http_headers=Config.GOREST_HEADERS
+    )
+
+    yield request_context
+
+    log.info("\n[ conftest.py ] -> Disposing Playwright API Context...")
+    request_context.dispose()
+
+
+@pytest.fixture
+def users_api(api_request_context):
+    """
+    Passes the API context into our UsersAPI Service Class.
+    Any test that requests 'users_api' will get this ready-to-use object.
+    """
+    return UsersAPI(api_request_context)
+
+
+# ==========================================
+# ALLURE REPORTING - ENVIRONMENT WIDGET
+# ==========================================
+
+def pytest_sessionfinish(session, exitstatus):
+    """
+    This hook runs automatically after all tests have finished executing.
+    It generates the environment.properties file for Allure.
+    """
+    LogGen.loggen()
+    log = logging.getLogger("pytest_session_finish")
+    log.info("\n[ conftest.py ] -> Generating Allure Environment details...")
+
+    allure_dir = session.config.getoption("--alluredir")
+
+    if allure_dir:
+        os.makedirs(allure_dir, exist_ok=True)
+
+        # 🌟 NEW LOGIC: Figure out what suite was run by checking the '-m' flag
+        # 'markexpr' grabs whatever you typed after '-m' (e.g., 'api', 'ui')
+        markexpr = session.config.getoption("markexpr", default="")
+
+        if "api" in markexpr.lower():
+            run_type = "API Automation Suite"
+        elif "ui" in markexpr.lower():
+            run_type = "UI Automation Suite"
+        elif markexpr:
+            run_type = f"Custom Run ({markexpr})"
+        else:
+            run_type = "Full Hybrid Suite (UI + API)"
+
+        # 2. Gather the universal data
+        env_data = {
+            "Execution_Environment": "QA / Staging",
+            "Test_Suite_Executed": run_type,
+            "Operating_System": f"{platform.system()} {platform.release()}",
+            "Python_Version": platform.python_version(),
+            "Framework": "Playwright + Pytest Hybrid"
+        }
+
+        # 🌟 BULLETPROOF LOGIC: Directly check the raw terminal marker
+        is_api_run = "api" in markexpr.lower()
+
+        # 3. Try to grab UI-specific data (Browser flags)
+        if not is_api_run:
+            try:
+                browser = session.config.getoption("--browser")
+                headless = session.config.getoption("--headless")
+                if browser:
+                    env_data["Browser"] = browser[0].capitalize()
+                if headless is not None:
+                    env_data["Headless_Mode"] = str(headless)
+            except ValueError:
+                pass  # It was an API run, skip the UI stuff!
+
+        # 4. Write the data into the exact file Allure expects
+        env_file_path = os.path.join(allure_dir, "environment.properties")
+        with open(env_file_path, "w") as f:
+            for key, value in env_data.items():
+                f.write(f"{key}={value}\n")

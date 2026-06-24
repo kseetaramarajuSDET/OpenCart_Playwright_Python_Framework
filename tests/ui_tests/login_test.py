@@ -3,11 +3,11 @@
 # ========================================================================
 import logging
 import pytest
-from tests.base_test import BaseTest
+from tests.ui_tests.base_test import BaseTest
 from config import Config
 from utilities.yaml_reader import YamlReader
 
-
+@pytest.mark.ui
 class TestLogin(BaseTest):
     # 🚀 Injected our dedicated test suite logging category scope
     log = logging.getLogger("TestSuite_Login")

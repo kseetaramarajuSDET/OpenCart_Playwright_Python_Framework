@@ -35,3 +35,19 @@ class Config:
 
     # Converts terminal/system string variables safely into true Python Booleans
     HEADLESS = os.getenv("headless", "False").lower() in ("true", "1", "t", "yes")
+
+
+    #  API Automation
+
+    # GoRest API Configuration
+    GOREST_BASE_URL = "https://gorest.co.in/public/v2/"
+
+    # Replace 'YOUR_TOKEN_HERE' with the token you copied from the website
+    GOREST_TOKEN = "643c3dd364f1a79a40e970152c263365f24ae19da34a02a080b1b467509b303b"
+
+
+    GOREST_HEADERS = {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Authorization": f"Bearer {GOREST_TOKEN}"  # This is the magic key!
+    }
