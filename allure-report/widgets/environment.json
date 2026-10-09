@@ -1,0 +1,1 @@
+[{"values":["QA / Staging"],"name":"Execution_Environment"},{"values":["UI Automation Suite"],"name":"Test_Suite_Executed"},{"values":["Windows 11"],"name":"Operating_System"},{"values":["3.14.0"],"name":"Python_Version"},{"values":["Playwright + Pytest Hybrid"],"name":"Framework"},{"values":["Chromium"],"name":"Browser"},{"values":["False"],"name":"Headless_Mode"}]

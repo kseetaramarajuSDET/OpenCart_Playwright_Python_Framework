@@ -1,0 +1,37 @@
+06/17/2026 04:53:00 PM: INFO: 📂 Attempting to read YAML data from: test_data/loginData.yml
+06/17/2026 04:53:00 PM: INFO: ✅ Successfully loaded 4 test data records from YAML.
+06/17/2026 04:53:01 PM: INFO: 
+[ conftest.py ] -> Initializing Playwright API Context...
+06/17/2026 04:53:01 PM: INFO: ********** STARTING TEST: Create New User **********
+06/17/2026 04:53:01 PM: INFO: Test Step: Sending POST request to create user with email: SeetaRam_1781695380@test.com
+06/17/2026 04:53:01 PM: INFO: POST Request -> Endpoint: users | Payload: {'name': 'SeetaRam_1781695380', 'gender': 'male', 'email': 'SeetaRam_1781695380@test.com', 'status': 'active'}
+06/17/2026 04:53:01 PM: INFO: Executed POST -> https://gorest.co.in/public/v2/users | Status: 201
+06/17/2026 04:53:01 PM: INFO: Test Step: Validating response status code is 201
+06/17/2026 04:53:01 PM: INFO: Success: User created! Saved ID '8510100' for future tests.
+06/17/2026 04:53:01 PM: INFO: ********** TEST PASSED: Create New User **********
+
+06/17/2026 04:53:01 PM: INFO: ********** STARTING TEST: Get Single User **********
+06/17/2026 04:53:01 PM: INFO: Test Step: Verifying User ID exists from previous test
+06/17/2026 04:53:01 PM: INFO: Test Step: Fetching user details for ID: 8510100
+06/17/2026 04:53:01 PM: INFO: GET Request -> Endpoint: users/8510100
+06/17/2026 04:53:02 PM: INFO: Executed GET -> https://gorest.co.in/public/v2/users/8510100 | Status: 200
+06/17/2026 04:53:02 PM: INFO: Test Step: Validating response status code is 200
+06/17/2026 04:53:02 PM: INFO: Test Step: Validating returned name matches 'SeetaRam_1781695380'
+06/17/2026 04:53:02 PM: INFO: Success: Data validation successful!
+06/17/2026 04:53:02 PM: INFO: ********** TEST PASSED: Get Single User **********
+
+06/17/2026 04:53:02 PM: INFO: ********** STARTING TEST: Get All Users **********
+06/17/2026 04:53:02 PM: INFO: Test Step: Firing request to fetch the list of all users
+06/17/2026 04:53:02 PM: INFO: GET Request -> Endpoint: users
+06/17/2026 04:53:02 PM: INFO: Executed GET -> https://gorest.co.in/public/v2/users | Status: 200
+06/17/2026 04:53:02 PM: INFO: Test Step: Validating response status code is 200
+06/17/2026 04:53:02 PM: INFO: Test Step: Validating response data type is a Python List
+06/17/2026 04:53:02 PM: INFO: Test Step: Validating the list is not empty
+06/17/2026 04:53:02 PM: INFO: Validating schema of the first user
+06/17/2026 04:53:02 PM: INFO: Successfully fetched 10 users. First user ID: 8510100
+06/17/2026 04:53:02 PM: INFO: ********** TEST PASSED: Get All Users **********
+
+06/17/2026 04:53:02 PM: INFO: 
+[ conftest.py ] -> Disposing Playwright API Context...
+06/17/2026 04:53:02 PM: INFO: 
+[ conftest.py ] -> Generating Allure Environment details...

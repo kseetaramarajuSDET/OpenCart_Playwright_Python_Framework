@@ -1,0 +1,12 @@
+06/17/2026 02:29:03 PM: INFO: 📂 Attempting to read YAML data from: test_data/loginData.yml
+06/17/2026 02:29:03 PM: INFO: ✅ Successfully loaded 4 test data records from YAML.
+06/17/2026 02:29:03 PM: INFO: 
+[ conftest.py ] -> Initializing Playwright API Context...
+06/17/2026 02:29:04 PM: INFO: POST Request -> Endpoint: users | Payload: {'name': 'SeetaRam_1781686743', 'gender': 'male', 'email': 'SeetaRam_1781686743@test.com', 'status': 'active'}
+06/17/2026 02:29:04 PM: INFO: Executed POST -> https://gorest.co.in/public/v2/users | Status: 201
+06/17/2026 02:29:04 PM: INFO: GET Request -> Endpoint: users/8509785
+06/17/2026 02:29:04 PM: INFO: Executed GET -> https://gorest.co.in/public/v2/users/8509785 | Status: 200
+06/17/2026 02:29:04 PM: INFO: 
+[ conftest.py ] -> Disposing Playwright API Context...
+06/17/2026 02:29:04 PM: INFO: 
+[ conftest.py ] -> Generating Allure Environment details...

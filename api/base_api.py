@@ -8,8 +8,8 @@ from utilities.custom_logger import LogGen
 class BaseAPI:
     log = LogGen.loggen()
 
-    def __init__(self, api_context: APIRequestContext):
-        self.api_context = api_context
+    def __init__(self, api_request_context: APIRequestContext):
+        self.api_context = api_request_context
 
     def _attach_to_allure(self, name: str, data: any):
         """Helper method to attach JSON data cleanly to Allure reports."""

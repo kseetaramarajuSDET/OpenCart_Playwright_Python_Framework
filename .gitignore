@@ -18,14 +18,6 @@ __pycache__/
 # 📊 2. Framework Execution Artifacts & Media Logs
 # ------------------------------------------------------------------------
 # This completely blocks local testing clutter from entering GitHub
-logs/
-reports/allure-results/
-reports/screenshots/
-reports/traces/
-reports/videos/
-reports/allure-report/
-reports/framework_report.html
-test_data
 
 # 🔒 3. Environment Secrets & IDE Overrides
 # ------------------------------------------------------------------------

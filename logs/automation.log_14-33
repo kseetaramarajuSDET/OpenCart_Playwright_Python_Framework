@@ -1,0 +1,37 @@
+06/17/2026 02:33:56 PM: INFO: 📂 Attempting to read YAML data from: test_data/loginData.yml
+06/17/2026 02:33:56 PM: INFO: ✅ Successfully loaded 4 test data records from YAML.
+06/17/2026 02:33:57 PM: INFO: Preparing engine lifecycle switches. Launching browser browser: 'chromium' | Headed: False
+06/17/2026 02:33:57 PM: INFO: Media recording parameter detected as ACTIVE. Directing video output files path to: 'reports/videos'
+06/17/2026 02:33:57 PM: INFO: Spanning secure isolated browser context profile container window.
+06/17/2026 02:33:57 PM: INFO: [test_login_with_valid_credentials] - Background tracing authorized. Deploying continuous diagnostic timeline monitors.
+06/17/2026 02:33:57 PM: INFO: [test_login_with_valid_credentials] - Opening clean workspace page tab canvas session.
+06/17/2026 02:33:58 PM: INFO: [test_login_with_valid_credentials] - Routing browser tab viewport gateway target URL to: 'https://tutorialsninja.com/demo'
+06/17/2026 02:33:59 PM: INFO: ------------------------------------------------------------------------
+06/17/2026 02:33:59 PM: INFO: 🚀 Triggering background page lifecycle setup automation mapping pipeline.
+06/17/2026 02:33:59 PM: INFO: ------------------------------------------------------------------------
+06/17/2026 02:33:59 PM: INFO: Piping live browser driver handles straight into LoginPage constructor context.
+06/17/2026 02:33:59 PM: INFO: Piping live browser driver handles straight into DashboardPage constructor context.
+06/17/2026 02:33:59 PM: INFO: ✅ Core UI Page Objects mapped cleanly to test context state. Ready for script steps.
+06/17/2026 02:33:59 PM: INFO: 🏁 EXECUTING TEST CASE: test_login_with_valid_credentials
+06/17/2026 02:33:59 PM: INFO:  Navigate to login page 
+06/17/2026 02:33:59 PM: INFO: Executing top bar interaction pathway loop to unfold profile dashboard link choices.
+06/17/2026 02:33:59 PM: INFO: Targeting element. Scanning DOM tree canvas for visibility: '//a[@title='My Account']'
+06/17/2026 02:33:59 PM: INFO: Interactivity state verified as ENABLED. Firing click event on selector: '//a[@title='My Account']'
+06/17/2026 02:33:59 PM: INFO: Targeting element. Scanning DOM tree canvas for visibility: '//ul[@class='dropdown-menu dropdown-menu-right']//a[normalize-space()='Login']'
+06/17/2026 02:33:59 PM: INFO: Interactivity state verified as ENABLED. Firing click event on selector: '//ul[@class='dropdown-menu dropdown-menu-right']//a[normalize-space()='Login']'
+06/17/2026 02:33:59 PM: INFO: Navigation transition verified. Returning initialized LoginPage Object context.
+06/17/2026 02:33:59 PM: INFO: **** Login Credentails : User=kseetaramaraju1@gmail.com, Expected=Seeta@123 ****
+06/17/2026 02:33:59 PM: INFO: Starting authentication transaction sequence block.
+06/17/2026 02:33:59 PM: INFO: Targeting element input field. Verifying visibility state: '#input-email'
+06/17/2026 02:33:59 PM: INFO: Purging stale characters, browser cache, and placeholders from selector: '#input-email'
+06/17/2026 02:33:59 PM: INFO: Input stream authorized. Injecting value: 'kseetaramaraju1@gmail.com' into selector: '#input-email'
+06/17/2026 02:34:00 PM: INFO: Targeting element input field. Verifying visibility state: '#input-password'
+06/17/2026 02:34:00 PM: INFO: Purging stale characters, browser cache, and placeholders from selector: '#input-password'
+06/17/2026 02:34:00 PM: INFO: Input stream authorized. Injecting value: '********' into selector: '#input-password'
+06/17/2026 02:34:00 PM: INFO: Targeting element. Scanning DOM tree canvas for visibility: '//input[@value='Login']'
+06/17/2026 02:34:00 PM: INFO: Interactivity state verified as ENABLED. Firing click event on selector: '//input[@value='Login']'
+06/17/2026 02:34:01 PM: INFO: Authentication transaction dispatched. Page view transition in progress.
+06/17/2026 02:34:01 PM: INFO:  Sampling landing dashboard canvas elements to verify authorization state.
+06/17/2026 02:34:01 PM: INFO: Initiating visual state assertion check for element layout header: '//h2[normalize-space()='My Orders']'
+06/17/2026 02:34:01 PM: INFO: Dashboard validation milestone confirmed. My Orders heading text is VISIBLE.
+06/17/2026 02:34:01 PM: INFO: 🎉 TEST CASE CONCLUDED: SUCCESSFUL VALID AUTHENTICATION VERIFIED

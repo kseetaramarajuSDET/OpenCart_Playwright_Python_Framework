@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","1657","test_login_with_valid_and_invalid_credentials[kseetaramaraju1@gmail.com-Seeta@123-pass]","tests.ui_tests","2026-10-09","passed","2026-10-09","TestLogin","login_test","",""
+"","1628","test_login_with_valid_and_invalid_credentials[Admin-wrong123-fail]","tests.ui_tests","2026-10-09","passed","2026-10-09","TestLogin","login_test","",""
+"","2360","test_login_with_valid_credentials","tests.ui_tests","2026-10-09","passed","2026-10-09","TestLogin","login_test","",""
+"","5007","test_login_with_valid_and_invalid_credentials[wrongUser-wrongPwd-fail]","tests.ui_tests","2026-10-09","passed","2026-10-09","TestLogin","login_test","",""
+"","1969","test_login_with_valid_and_invalid_credentials[wrongUser-admin123-fail]","tests.ui_tests","2026-10-09","passed","2026-10-09","TestLogin","login_test","",""

@@ -1,0 +1,1 @@
+[{"name":"Jenkins","type":"jenkins","url":"http://localhost:8080/","buildOrder":3,"buildName":"OpenCart_Playwright_With_Python_Local #3","buildUrl":"http://localhost:8080/job/OpenCart_Playwright_With_Python_Local/3/display/redirect","reportName":"AllureReport","reportUrl":"http://localhost:8080/job/OpenCart_Playwright_With_Python_Local/3/allure"}]

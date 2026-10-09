@@ -1,0 +1,118 @@
+10/09/2026 03:27:00 PM: INFO: Piping live browser driver handles straight into DashboardPage constructor context.
+10/09/2026 03:27:00 PM: INFO: ✅ Core UI Page Objects mapped cleanly to test context state. Ready for script steps.
+10/09/2026 03:27:00 PM: INFO: **** Starting Data Driven Test: User=wrongUser, Expected=fail ****
+10/09/2026 03:27:00 PM: INFO: 🏁 EXECUTING TEST CASE: test_login_with_valid_and_invalid_credentials[wrongUser-admin123-fail]
+10/09/2026 03:27:00 PM: INFO:  Navigate to login page 
+10/09/2026 03:27:00 PM: INFO: Executing top bar interaction pathway loop to unfold profile dashboard link choices.
+10/09/2026 03:27:00 PM: INFO: Targeting element. Scanning DOM tree canvas for visibility: '//a[@title='My Account']'
+10/09/2026 03:27:00 PM: INFO: Interactivity state verified as ENABLED. Firing click event on selector: '//a[@title='My Account']'
+10/09/2026 03:27:00 PM: INFO: Targeting element. Scanning DOM tree canvas for visibility: '//ul[@class='dropdown-menu dropdown-menu-right']//a[normalize-space()='Login']'
+10/09/2026 03:27:00 PM: INFO: Interactivity state verified as ENABLED. Firing click event on selector: '//ul[@class='dropdown-menu dropdown-menu-right']//a[normalize-space()='Login']'
+10/09/2026 03:27:00 PM: INFO: Navigation transition verified. Returning initialized LoginPage Object context.
+10/09/2026 03:27:00 PM: INFO: **** Login Credentails : User=wrongUser, Expected=admin123 ****
+10/09/2026 03:27:00 PM: INFO: Starting authentication transaction sequence block.
+10/09/2026 03:27:00 PM: INFO: Targeting element input field. Verifying visibility state: '#input-email'
+10/09/2026 03:27:00 PM: INFO: Purging stale characters, browser cache, and placeholders from selector: '#input-email'
+10/09/2026 03:27:00 PM: INFO: Input stream authorized. Injecting value: 'wrongUser' into selector: '#input-email'
+10/09/2026 03:27:00 PM: INFO: Targeting element input field. Verifying visibility state: '#input-password'
+10/09/2026 03:27:00 PM: INFO: Purging stale characters, browser cache, and placeholders from selector: '#input-password'
+10/09/2026 03:27:00 PM: INFO: Input stream authorized. Injecting value: '********' into selector: '#input-password'
+10/09/2026 03:27:00 PM: INFO: Targeting element. Scanning DOM tree canvas for visibility: '//input[@value='Login']'
+10/09/2026 03:27:00 PM: INFO: Interactivity state verified as ENABLED. Firing click event on selector: '//input[@value='Login']'
+10/09/2026 03:27:02 PM: INFO: Authentication transaction dispatched. Page view transition in progress.
+10/09/2026 03:27:02 PM: INFO: Initiating scan for runtime validation error alerts.
+10/09/2026 03:27:02 PM: INFO: Checking visibility state. Maximum search window: 5000ms
+10/09/2026 03:27:02 PM: INFO: ✅ Pass: Correctly showed error for invalid user: wrongUser
+10/09/2026 03:27:02 PM: INFO: **** Finished Data Driven Test Case ****
+10/09/2026 03:27:02 PM: INFO: [test_login_with_valid_and_invalid_credentials[wrongUser-admin123-fail]] - Automation sequence complete. Reconciling test outcome metrics. Failed status: False
+10/09/2026 03:27:02 PM: INFO: [test_login_with_valid_and_invalid_credentials[wrongUser-admin123-fail]] - Closing timeline track loop handles. Compressing trace archives to zip: 'reports/traces/test_login_with_valid_and_invalid_credentials[wrongUser-admin123-fail]_trace.zip'
+10/09/2026 03:27:02 PM: INFO: [test_login_with_valid_and_invalid_credentials[wrongUser-admin123-fail]] - Test passed cleanly. Unlinking passing trace zip off local disk data directories.
+10/09/2026 03:27:02 PM: INFO: [test_login_with_valid_and_invalid_credentials[wrongUser-admin123-fail]] - Detaching system tab sessions and driver handles. Severing file locks.
+10/09/2026 03:27:02 PM: INFO: [test_login_with_valid_and_invalid_credentials[wrongUser-admin123-fail]] - Execution passed cleanly. Purging non-failure media recordings from file paths storage: 'C:\AllPythonProjects\OpenCart_Playwright_Python_Framework\reports\videos\page@3e269c9e4817159202528678dc4ba128.webm'
+10/09/2026 03:27:02 PM: INFO: Wiping environment memory allocations. Terminating active browser profile context channels.
+10/09/2026 03:27:02 PM: INFO: Preparing engine lifecycle switches. Launching browser browser: 'chromium' | Headed: False
+10/09/2026 03:27:03 PM: INFO: Media recording parameter detected as ACTIVE. Directing video output files path to: 'reports/videos'
+10/09/2026 03:27:03 PM: INFO: Spanning secure isolated browser context profile container window.
+10/09/2026 03:27:03 PM: INFO: [test_login_with_valid_and_invalid_credentials[wrongUser-wrongPwd-fail]] - Background tracing authorized. Deploying continuous diagnostic timeline monitors.
+10/09/2026 03:27:03 PM: INFO: [test_login_with_valid_and_invalid_credentials[wrongUser-wrongPwd-fail]] - Opening clean workspace page tab canvas session.
+10/09/2026 03:27:03 PM: INFO: [test_login_with_valid_and_invalid_credentials[wrongUser-wrongPwd-fail]] - Routing browser tab viewport gateway target URL to: 'https://tutorialsninja.com/demo'
+10/09/2026 03:27:06 PM: INFO: ------------------------------------------------------------------------
+10/09/2026 03:27:06 PM: INFO: 🚀 Triggering background page lifecycle setup automation mapping pipeline.
+10/09/2026 03:27:06 PM: INFO: ------------------------------------------------------------------------
+10/09/2026 03:27:06 PM: INFO: Piping live browser driver handles straight into LoginPage constructor context.
+10/09/2026 03:27:06 PM: INFO: Piping live browser driver handles straight into DashboardPage constructor context.
+10/09/2026 03:27:06 PM: INFO: ✅ Core UI Page Objects mapped cleanly to test context state. Ready for script steps.
+10/09/2026 03:27:06 PM: INFO: **** Starting Data Driven Test: User=wrongUser, Expected=fail ****
+10/09/2026 03:27:06 PM: INFO: 🏁 EXECUTING TEST CASE: test_login_with_valid_and_invalid_credentials[wrongUser-wrongPwd-fail]
+10/09/2026 03:27:06 PM: INFO:  Navigate to login page 
+10/09/2026 03:27:06 PM: INFO: Executing top bar interaction pathway loop to unfold profile dashboard link choices.
+10/09/2026 03:27:06 PM: INFO: Targeting element. Scanning DOM tree canvas for visibility: '//a[@title='My Account']'
+10/09/2026 03:27:06 PM: INFO: Interactivity state verified as ENABLED. Firing click event on selector: '//a[@title='My Account']'
+10/09/2026 03:27:06 PM: INFO: Targeting element. Scanning DOM tree canvas for visibility: '//ul[@class='dropdown-menu dropdown-menu-right']//a[normalize-space()='Login']'
+10/09/2026 03:27:06 PM: INFO: Interactivity state verified as ENABLED. Firing click event on selector: '//ul[@class='dropdown-menu dropdown-menu-right']//a[normalize-space()='Login']'
+10/09/2026 03:27:06 PM: INFO: Navigation transition verified. Returning initialized LoginPage Object context.
+10/09/2026 03:27:06 PM: INFO: **** Login Credentails : User=wrongUser, Expected=wrongPwd ****
+10/09/2026 03:27:06 PM: INFO: Starting authentication transaction sequence block.
+10/09/2026 03:27:06 PM: INFO: Targeting element input field. Verifying visibility state: '#input-email'
+10/09/2026 03:27:06 PM: INFO: Purging stale characters, browser cache, and placeholders from selector: '#input-email'
+10/09/2026 03:27:06 PM: INFO: Input stream authorized. Injecting value: 'wrongUser' into selector: '#input-email'
+10/09/2026 03:27:06 PM: INFO: Targeting element input field. Verifying visibility state: '#input-password'
+10/09/2026 03:27:06 PM: INFO: Purging stale characters, browser cache, and placeholders from selector: '#input-password'
+10/09/2026 03:27:06 PM: INFO: Input stream authorized. Injecting value: '********' into selector: '#input-password'
+10/09/2026 03:27:06 PM: INFO: Targeting element. Scanning DOM tree canvas for visibility: '//input[@value='Login']'
+10/09/2026 03:27:06 PM: INFO: Interactivity state verified as ENABLED. Firing click event on selector: '//input[@value='Login']'
+10/09/2026 03:27:07 PM: INFO: Authentication transaction dispatched. Page view transition in progress.
+10/09/2026 03:27:07 PM: INFO: Initiating scan for runtime validation error alerts.
+10/09/2026 03:27:07 PM: INFO: Checking visibility state. Maximum search window: 5000ms
+10/09/2026 03:27:07 PM: INFO: ✅ Pass: Correctly showed error for invalid user: wrongUser
+10/09/2026 03:27:07 PM: INFO: **** Finished Data Driven Test Case ****
+10/09/2026 03:27:07 PM: INFO: [test_login_with_valid_and_invalid_credentials[wrongUser-wrongPwd-fail]] - Automation sequence complete. Reconciling test outcome metrics. Failed status: False
+10/09/2026 03:27:07 PM: INFO: [test_login_with_valid_and_invalid_credentials[wrongUser-wrongPwd-fail]] - Closing timeline track loop handles. Compressing trace archives to zip: 'reports/traces/test_login_with_valid_and_invalid_credentials[wrongUser-wrongPwd-fail]_trace.zip'
+10/09/2026 03:27:07 PM: INFO: [test_login_with_valid_and_invalid_credentials[wrongUser-wrongPwd-fail]] - Test passed cleanly. Unlinking passing trace zip off local disk data directories.
+10/09/2026 03:27:07 PM: INFO: [test_login_with_valid_and_invalid_credentials[wrongUser-wrongPwd-fail]] - Detaching system tab sessions and driver handles. Severing file locks.
+10/09/2026 03:27:07 PM: INFO: [test_login_with_valid_and_invalid_credentials[wrongUser-wrongPwd-fail]] - Execution passed cleanly. Purging non-failure media recordings from file paths storage: 'C:\AllPythonProjects\OpenCart_Playwright_Python_Framework\reports\videos\page@f808fcfe4c3b5d0640a218c6efd169ce.webm'
+10/09/2026 03:27:07 PM: INFO: Wiping environment memory allocations. Terminating active browser profile context channels.
+10/09/2026 03:27:07 PM: INFO: Preparing engine lifecycle switches. Launching browser browser: 'chromium' | Headed: False
+10/09/2026 03:27:07 PM: INFO: Media recording parameter detected as ACTIVE. Directing video output files path to: 'reports/videos'
+10/09/2026 03:27:07 PM: INFO: Spanning secure isolated browser context profile container window.
+10/09/2026 03:27:07 PM: INFO: [test_login_with_valid_and_invalid_credentials[kseetaramaraju1@gmail.com-Seeta@123-pass]] - Background tracing authorized. Deploying continuous diagnostic timeline monitors.
+10/09/2026 03:27:07 PM: INFO: [test_login_with_valid_and_invalid_credentials[kseetaramaraju1@gmail.com-Seeta@123-pass]] - Opening clean workspace page tab canvas session.
+10/09/2026 03:27:08 PM: INFO: [test_login_with_valid_and_invalid_credentials[kseetaramaraju1@gmail.com-Seeta@123-pass]] - Routing browser tab viewport gateway target URL to: 'https://tutorialsninja.com/demo'
+10/09/2026 03:27:09 PM: INFO: ------------------------------------------------------------------------
+10/09/2026 03:27:09 PM: INFO: 🚀 Triggering background page lifecycle setup automation mapping pipeline.
+10/09/2026 03:27:09 PM: INFO: ------------------------------------------------------------------------
+10/09/2026 03:27:09 PM: INFO: Piping live browser driver handles straight into LoginPage constructor context.
+10/09/2026 03:27:09 PM: INFO: Piping live browser driver handles straight into DashboardPage constructor context.
+10/09/2026 03:27:09 PM: INFO: ✅ Core UI Page Objects mapped cleanly to test context state. Ready for script steps.
+10/09/2026 03:27:09 PM: INFO: **** Starting Data Driven Test: User=kseetaramaraju1@gmail.com, Expected=pass ****
+10/09/2026 03:27:09 PM: INFO: 🏁 EXECUTING TEST CASE: test_login_with_valid_and_invalid_credentials[kseetaramaraju1@gmail.com-Seeta@123-pass]
+10/09/2026 03:27:09 PM: INFO:  Navigate to login page 
+10/09/2026 03:27:09 PM: INFO: Executing top bar interaction pathway loop to unfold profile dashboard link choices.
+10/09/2026 03:27:09 PM: INFO: Targeting element. Scanning DOM tree canvas for visibility: '//a[@title='My Account']'
+10/09/2026 03:27:09 PM: INFO: Interactivity state verified as ENABLED. Firing click event on selector: '//a[@title='My Account']'
+10/09/2026 03:27:09 PM: INFO: Targeting element. Scanning DOM tree canvas for visibility: '//ul[@class='dropdown-menu dropdown-menu-right']//a[normalize-space()='Login']'
+10/09/2026 03:27:09 PM: INFO: Interactivity state verified as ENABLED. Firing click event on selector: '//ul[@class='dropdown-menu dropdown-menu-right']//a[normalize-space()='Login']'
+10/09/2026 03:27:09 PM: INFO: Navigation transition verified. Returning initialized LoginPage Object context.
+10/09/2026 03:27:09 PM: INFO: **** Login Credentails : User=kseetaramaraju1@gmail.com, Expected=Seeta@123 ****
+10/09/2026 03:27:09 PM: INFO: Starting authentication transaction sequence block.
+10/09/2026 03:27:09 PM: INFO: Targeting element input field. Verifying visibility state: '#input-email'
+10/09/2026 03:27:09 PM: INFO: Purging stale characters, browser cache, and placeholders from selector: '#input-email'
+10/09/2026 03:27:09 PM: INFO: Input stream authorized. Injecting value: 'kseetaramaraju1@gmail.com' into selector: '#input-email'
+10/09/2026 03:27:09 PM: INFO: Targeting element input field. Verifying visibility state: '#input-password'
+10/09/2026 03:27:09 PM: INFO: Purging stale characters, browser cache, and placeholders from selector: '#input-password'
+10/09/2026 03:27:09 PM: INFO: Input stream authorized. Injecting value: '********' into selector: '#input-password'
+10/09/2026 03:27:09 PM: INFO: Targeting element. Scanning DOM tree canvas for visibility: '//input[@value='Login']'
+10/09/2026 03:27:09 PM: INFO: Interactivity state verified as ENABLED. Firing click event on selector: '//input[@value='Login']'
+10/09/2026 03:27:10 PM: INFO: Authentication transaction dispatched. Page view transition in progress.
+10/09/2026 03:27:10 PM: INFO: Initiating visual state assertion check for element layout header: '//h2[normalize-space()='My Orders']'
+10/09/2026 03:27:10 PM: INFO: Dashboard validation milestone confirmed. My Orders heading text is VISIBLE.
+10/09/2026 03:27:10 PM: INFO: ✅ Pass: Login worked as expected for user: kseetaramaraju1@gmail.com
+10/09/2026 03:27:10 PM: INFO: **** Finished Data Driven Test Case ****
+10/09/2026 03:27:10 PM: INFO: [test_login_with_valid_and_invalid_credentials[kseetaramaraju1@gmail.com-Seeta@123-pass]] - Automation sequence complete. Reconciling test outcome metrics. Failed status: False
+10/09/2026 03:27:10 PM: INFO: [test_login_with_valid_and_invalid_credentials[kseetaramaraju1@gmail.com-Seeta@123-pass]] - Closing timeline track loop handles. Compressing trace archives to zip: 'reports/traces/test_login_with_valid_and_invalid_credentials[kseetaramaraju1@gmail.com-Seeta@123-pass]_trace.zip'
+10/09/2026 03:27:10 PM: INFO: [test_login_with_valid_and_invalid_credentials[kseetaramaraju1@gmail.com-Seeta@123-pass]] - Test passed cleanly. Unlinking passing trace zip off local disk data directories.
+10/09/2026 03:27:10 PM: INFO: [test_login_with_valid_and_invalid_credentials[kseetaramaraju1@gmail.com-Seeta@123-pass]] - Detaching system tab sessions and driver handles. Severing file locks.
+10/09/2026 03:27:10 PM: INFO: [test_login_with_valid_and_invalid_credentials[kseetaramaraju1@gmail.com-Seeta@123-pass]] - Execution passed cleanly. Purging non-failure media recordings from file paths storage: 'C:\AllPythonProjects\OpenCart_Playwright_Python_Framework\reports\videos\page@78c118badd9620b396d173bf010be4fa.webm'
+10/09/2026 03:27:10 PM: INFO: Wiping environment memory allocations. Terminating active browser profile context channels.
+10/09/2026 03:27:11 PM: INFO: 
+[ conftest.py ] -> Generating Allure Environment details...
